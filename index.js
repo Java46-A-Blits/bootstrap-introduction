@@ -1,4 +1,4 @@
-const root = document.getElementById('root')
+// const root = document.getElementById('root') // --> Not neccessary since it has been created in 'Pagiator' constructor
 // root.innerHTML = `<ul> ${getItems()}</ul>`
 // function range(from, length) {
 //     const res = [];

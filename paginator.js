@@ -9,7 +9,7 @@ function range(from, length) {
 }
 function  getItems(from, length, clickFn){
     return range(from, length).map(i => `<li class="page-item">
-     <a class="page-link" href="#" onclick="${clickFn.name}(${i})">${i}</a></li>`).join(' ');
+     <a class="page-link" href="#" onclick="${clickFn.name}(${i})">${i}.</a></li>`).join('   ');
 }
 
 class Paginator {
