@@ -39,9 +39,8 @@ function getChessRow(row, index){
 function getChessCells(row, index){
     return row.map(getChessCell(index)).join('');
 }
-function getChessCell(index){
-    return (cell, j) => `<div class="col-auto ${cell == 0 ? 'bg-dark' : 'bg-white'}
-     ${cell == 0 ? 'text-dark' : 'text-white'} border"
+function getChessCell(index){               // index -  is a row; j is a column number (index of an array of letters in this case)
+    return (cell, j) => `<div class="col-auto ${cell == 0 ? 'bg-dark' : 'bg-white'} ${cell == 0 ? 'text-dark' : 'text-white'} border"
       onclick="${clickFn.name}('${letters[j]}', ${index})" >${letters[j]}</div>`;
 }
 function getLetters(){
